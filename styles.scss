@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$background-color: #1B1B32;
+$color: #ffffff;
+$button-background-color: #3B3B4F;
+$font-family: Verdana, sans-serif;
+$inputs-background-color: #0A0A23;
+
+
+body {
+    background-color: $background-color;
+    color: $color;
+    font-family: $font-family;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+h1,
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+form {
+    width: 60vw;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+fieldset{
+    border: none;
+    margin-top: 20px;
+}
+fieldset:last-of-type {
+    margin-bottom: 20px;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin: 8px 0;
+    height: 2em;
+    padding: 1px 2px;
+}
+
+input,
+select,
+button,
+textarea{
+    display: block;
+    background-color: $inputs-background-color;
+    border: none;
+    color: $color
+}
+
+.inline {
+    width: unset;
+    display: inline;
+    vertical-align: middle;
+    
+}
+
+button {
+    width: 60%;
+    margin: 30px auto 0;
+    background-color: $button-background-color;
+    border: 1px solid $color;
+    height: 2.2em;
+    font-size: 1.1em;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: $background-color;
+}
